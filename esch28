@@ -1,0 +1,80 @@
+pragma solidity ^0.4.18;
+contract Esch28 is MemberSys {
+  function Esch28 () public {
+      dynamicbonus[0]=50;
+     dynamicbonus[1]=30;
+     dynamicbonus[2]=20;
+     dynamicbonus[3]=10; 
+     dynamicbonus[4]=5; 
+
+ }
+
+    ////////////////// 
+   
+    function lq(uint32 _ywbh,address _ad4) public payable returns(bool){
+    address adt0= _ad4; 
+    
+    require( _ywbh>0 && _ywbh<=MsBuTotal[adt0]  );  
+  
+   
+    uint256 ywbh1t;    
+    ywbh1t=MsAdToN[adt0]*100000+_ywbh;
+    
+    if((now>=bizTime[ywbh1t]+7*time0)&& bizstate[ywbh1t]==0){
+    tr0(msg.sender,bizNum[ywbh1t]/10); 
+    bizstate[ywbh1t]+=1;
+    }
+    
+    if((now>=bizTime[ywbh1t]+14*time0)&& bizstate[ywbh1t]==1){
+    tr0(msg.sender,bizNum[ywbh1t]/5);    bizstate[ywbh1t]+=1;
+    }
+    
+    if((now>=bizTime[ywbh1t]+21*time0)&& bizstate[ywbh1t]==2 ){
+    tr0(msg.sender,bizNum[ywbh1t]*65/100);
+    bizstate[ywbh1t]+=1;
+    }
+
+    require(adt0==  _ad4);// 
+    return true;
+    }
+    
+// 
+function cBun(uint32 _ywbh) public view  returns (uint256 _ywbh3,uint _time,uint _now,uint sjc,uint8 _ywzt,uint32 _BuTotal,uint256 _bizNum) {
+    uint256 ywbh2t;    
+    require(_ywbh<=MsBuTotal[msg.sender]);// 
+    ywbh2t=MsAdToN[msg.sender]*100000+_ywbh;
+  return (ywbh2t,bizTime[ywbh2t],now,(now-bizTime[ywbh2t])/time0,bizstate[ywbh2t],MsBuTotal[msg.sender],bizNum[ywbh2t]);
+}
+
+function cMber(address _ad1) public view  returns (uint32 _MsBuTotal,uint32 _MsSon,uint256 _MsBuActTime,uint256 _MsBuAmo,uint256 _MsBuReN,uint256 _MsBuSta1,uint256 _MsBuSta2 ){
+    require(MsAdmin[msg.sender]==true|| MsCx[msg.sender]==true||msg.sender==_ad1);
+    return (MsBuTotal[_ad1],MsSon[_ad1], MsBuActTime[_ad1],MsBuAmo[_ad1],MsBuReN[_ad1],MsBuSta1[_ad1],MsBuSta2[_ad1]);
+}
+
+function cNode(address _ad2) public view  returns ( bool _Ms1b, address _Ms1Gene,uint256 _Ms1Time,uint256 _Ms1N0){
+
+   require(MsAdmin[msg.sender]==true|| MsCx[msg.sender]==true||msg.sender==_ad2);
+    return( Ms1b[_ad2],Ms1Gene[_ad2],Ms1Time[_ad2],Ms1N0[_ad2]);
+}
+
+function cE(address _ad3) public view  returns (uint32 _MsAdToN,address _MsFa, uint32 _MsBo  ,uint32 _MsSon) {
+   require(MsAdmin[msg.sender]==true|| MsCx[msg.sender]==true||msg.sender==_ad3);
+    return( MsAdToN[_ad3],MsFa[_ad3],MsBo[_ad3],MsSon[_ad3]); 
+    
+}
+
+function cbn(uint32 _lsxh1) public view  returns (uint32 _lsxh0,uint256 _ywbh3,uint _time,uint _now,uint sjc,uint8 _ywzt,uint256 _bizNum) {
+    require(MsAdmin[msg.sender]==true ||MsCx[msg.sender]==true);
+   uint256 ywbh2t=lsbh[_lsxh1]; 
+   return (lsxh,ywbh2t,bizTime[ywbh2t],now,(now-bizTime[ywbh2t])/time0,bizstate[ywbh2t],bizNum[ywbh2t]);
+}
+
+
+function cmon() public view  returns (uint256 _BuEthNum,uint32 _Msnum) {
+    require(MsAdmin[msg.sender]==true ||MsCx[msg.sender]==true);
+
+   return (BuEthNum,Msnum);
+}
+	function() payable public  {
+    }
+}

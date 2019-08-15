@@ -1,0 +1,90 @@
+[
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "_jsr",
+				"type": "address"
+			},
+			{
+				"name": "_xjr",
+				"type": "address"
+			}
+		],
+		"name": "join",
+		"outputs": [
+			{
+				"name": "",
+				"type": "bool"
+			}
+		],
+		"payable": true,
+		"stateMutability": "payable",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "_co2",
+				"type": "address"
+			}
+		],
+		"name": "conti1",
+		"outputs": [
+			{
+				"name": "",
+				"type": "bool"
+			}
+		],
+		"payable": true,
+		"stateMutability": "payable",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "_ywbh3",
+				"type": "uint32"
+			},
+			{
+				"name": "_co3",
+				"type": "address"
+			}
+		],
+		"name": "conti2",
+		"outputs": [
+			{
+				"name": "",
+				"type": "bool"
+			}
+		],
+		"payable": true,
+		"stateMutability": "payable",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "_ywbh",
+				"type": "uint32"
+			},
+			{
+				"name": "_ad4",
+				"type": "address"
+			}
+		],
+		"name": "lq",
+		"outputs": [
+			{
+				"name": "",
+				"type": "bool"
+			}
+		],
+		"payable": true,
+		"stateMutability": "payable",
+		"type": "function"
+	}
+]

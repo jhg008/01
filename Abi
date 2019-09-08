@@ -1,3 +1,93 @@
+{
+		"constant": true,
+		"inputs": [
+			{
+				"name": "_ywbh",
+				"type": "uint32"
+			}
+		],
+		"name": "cBun",
+		"outputs": [
+			{
+				"name": "_ywbh3",
+				"type": "uint256"
+			},
+			{
+				"name": "_time",
+				"type": "uint256"
+			},
+			{
+				"name": "_now",
+				"type": "uint256"
+			},
+			{
+				"name": "sjc",
+				"type": "uint256"
+			},
+			{
+				"name": "_ywzt",
+				"type": "uint8"
+			},
+			{
+				"name": "_BuTotal",
+				"type": "uint32"
+			},
+			{
+				"name": "_bizNum",
+				"type": "uint256"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	}
+
+/////////////////////////
+{
+		"constant": true,
+		"inputs": [
+			{
+				"name": "_ad1",
+				"type": "address"
+			}
+		],
+		"name": "cMber",
+		"outputs": [
+			{
+				"name": "_MsBuTotal",
+				"type": "uint32"
+			},
+			{
+				"name": "_MsSon",
+				"type": "uint32"
+			},
+			{
+				"name": "_MsBuActTime",
+				"type": "uint256"
+			},
+			{
+				"name": "_MsBuAmo",
+				"type": "uint256"
+			},
+			{
+				"name": "_MsBuReN",
+				"type": "uint256"
+			},
+			{
+				"name": "_MsBuSta1",
+				"type": "uint256"
+			},
+			{
+				"name": "_MsBuSta2",
+				"type": "uint256"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	}
+
+//////////////////////////////////////
 [
 	{
 		"constant": false,
